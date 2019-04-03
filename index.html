@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js" async></script>
+  <title>Pokemon Game</title>
+</head>
+
+<body>
+  <h1 class="page-title">Pokemon Mix Match</h1>
+  <div class="overlay-text visible">
+    Welcome to Pokemon Mix Match
+    <span class="overlay-text-small">Click to Start</span>
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    VICTORY
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time <span id="time-remaining">60</span>
+      </div>
+      <div class="game-info">
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/evee2.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/evee2.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/charmender.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/charmender.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/gekkouga2.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/gekkouga2.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/togepi.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/togepi.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/pikachu.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/pikachu.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/riolu.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/riolu.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/treecko.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/treecko.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/torchip.png" width="100%">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img class="pokeball" src="Assets/Images/pokeball.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/torchip.png" width="100%">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
